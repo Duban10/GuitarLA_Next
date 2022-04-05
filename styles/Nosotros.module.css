@@ -1,0 +1,16 @@
+/* al no ver columnas hacer una separacion de los bloques de 4rem */
+.contenido{
+    display: grid;
+    gap: 4rem;
+}
+/* al ver columnas reparte en dos columnas 
+    align-items no permite que se estire la imagen al ser responsive
+    sino que siga teniendo las dimensiones mientras se angosta o se ancha
+    
+*/
+@media(min-width: 768px){
+    .contenido{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
